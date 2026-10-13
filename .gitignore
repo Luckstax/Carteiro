@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local OAuth credentials and tokens
+credentials.json
+client_secret*.json
+token.json
+token_*.json
+dados/tokens/
+
+# Local/private data: profiles, contact history and resumes
+*.pdf
+dados/*.db
+dados/*.db-*
+dados/*.sqlite
+dados/*.sqlite3
+logs/*
+!logs/README.txt
+
+# Personal maintenance scripts contain hard-coded contact data or sending routines
+# Keep them local until they are reviewed and made portable.
+dados/*.py
+
+# Local settings, archives and temporary inspection files
+.env
+.env.*
+!.env.example
+*.rar
+*.zip
+_inspect_db.py
